@@ -1,3 +1,6 @@
+"""Round A 2022 - Kick Start 2022 - Speed Typing
+https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e7021"""
+
 T = int(input())
 
 for x in range(1, T+1):
