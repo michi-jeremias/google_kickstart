@@ -1,8 +1,5 @@
 def find_target_digit(I, modulo):
-    # target_digit = 0
     sum_digits = sum([int(d) for d in I])
-
-    # return modulo - (sum_digits % modulo)
 
     for target_digit in range(modulo):
         if (sum_digits + target_digit) % modulo == 0:
@@ -41,9 +38,10 @@ for x in range(1, T + 1):
     I = str(input())
 
     y = find_y(I)
-    print(f"Case {x}: {y}", flush=True)
+    print(f"Case #{x}: {y}", flush=True)
 
 
+# TEST
 with open("./test_set_1/ts1_input.txt", "r") as infile, open(
     "./test_set_1/ts1_output.txt", "r"
 ) as outfile:
